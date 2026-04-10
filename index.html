@@ -77,6 +77,190 @@
             </tbody>
           </table>
           <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2>Research</h2>
+                  <p>
+                    I'm interested in <b>bioinformatics</b>, <b>deep learning for drug discovery</b>, and
+                    <b>large language models applied to chemistry and biomedicine</b>. My research spans
+                    single-cell &amp; spatial transcriptomics, molecular property prediction, and AI-driven
+                    chemical text mining. Some papers are <span class="highlight">highlighted</span>.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
+              <!-- Paper 1: Chemical Science 2024 — LLM for chemical text mining (HIGHLIGHT) -->
+              <tr onmouseout="chemscience_stop()" onmouseover="chemscience_start()" bgcolor="#ffffd0">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id="chemscience_image">
+                      <img src="images/huang_chemscience2024.jpg" width="160">
+                    </div>
+                    <img src="images/huang_chemscience2024.jpg" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function chemscience_start () {
+                      document.getElementById('chemscience_image').style.opacity = "1";
+                    }
+                    function chemscience_stop () {
+                      document.getElementById('chemscience_image').style.opacity = "0";
+                    }
+                    chemscience_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://doi.org/10.1039/D4SC00924J">
+                    <span class="papertitle">Fine-tuning large language models for chemical text mining</span>
+                  </a>
+                  <br>
+                  Wei Zhang&#42;, Qinggong Wang&#42;, Xiangtai Kong, Jiacheng Xiong, Shengkun Ni, Duanhua Cao,
+                  Buying Niu, Mingan Chen, Yameng Li, Runze Zhang, Yitian Wang, Lehan Zhang, Xutong Li,
+                  Zhaoping Xiong, Qian Shi, <strong>Ziming Huang</strong>, Zunyun Fu&dagger;, Mingyue Zheng&dagger;
+                  <br>
+                  <em>Chemical Science</em>, 2024 &nbsp;
+                  <font color="#e74c3c"><strong>(RSC Hot Article)</strong></font>
+                  <br>
+                  <a href="https://doi.org/10.1039/D4SC00924J">DOI</a>
+                  <p></p>
+                  <p>
+                    Fine-tuned LLMs (GPT-3.5, Mistral, Llama3) achieve 69–95% accuracy on five complex chemical
+                    text mining tasks—compound recognition, reaction role labeling, MOF synthesis extraction, NMR
+                    data extraction, and action-sequence conversion—using only small labeled datasets.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- Paper 2: Phytotherapy Research 2022 — Eugenol AAA -->
+              <tr onmouseout="phyto_stop()" onmouseover="phyto_start()">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id="phyto_image">
+                      <img src="images/huang_phyto2022.jpg" width="160">
+                    </div>
+                    <img src="images/huang_phyto2022.jpg" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function phyto_start () {
+                      document.getElementById('phyto_image').style.opacity = "1";
+                    }
+                    function phyto_stop () {
+                      document.getElementById('phyto_image').style.opacity = "0";
+                    }
+                    phyto_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://doi.org/10.1002/ptr.7349">
+                    <span class="papertitle">Eugenol restrains abdominal aortic aneurysm progression with
+                      down-regulations on NF-&#954;B and COX-2</span>
+                  </a>
+                  <br>
+                  Zhibo Zhai, Xiaoxue Zhang, Yingnan Ding, <strong>Ziming Huang</strong>, Qi Li,
+                  Mingyue Zheng, Keigo Cho, Zhiqing Dong, Weijun Fu, Zheng Chen, et al.
+                  <br>
+                  <em>Phytotherapy Research</em>, 36(2), 928–937, 2022
+                  <br>
+                  <a href="https://doi.org/10.1002/ptr.7349">DOI</a>
+                  <p></p>
+                  <p>
+                    Eugenol (4-allyl-2-methoxyphenol) was identified as a dual-target candidate against
+                    abdominal aortic aneurysm (AAA) by simultaneously downregulating both NF-&#954;B and COX-2,
+                    demonstrating significant therapeutic efficacy in murine models.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- Paper 3: Bioinformatics 2022 — Graph-pKa -->
+              <tr onmouseout="bioinf_stop()" onmouseover="bioinf_start()">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id="bioinf_image">
+                      <img src="images/huang_bioinf2022.jpg" width="160">
+                    </div>
+                    <img src="images/huang_bioinf2022.jpg" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function bioinf_start () {
+                      document.getElementById('bioinf_image').style.opacity = "1";
+                    }
+                    function bioinf_stop () {
+                      document.getElementById('bioinf_image').style.opacity = "0";
+                    }
+                    bioinf_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://doi.org/10.1093/bioinformatics/btab714">
+                    <span class="papertitle">Multi-instance learning of graph neural networks for aqueous
+                      p<i>K</i><sub>a</sub> prediction</span>
+                  </a>
+                  <br>
+                  Jiacheng Xiong, Zihao Li, Gengmo Wang, Zunyun Fu, Fang Zhong, Tianbiao Xu, Xiaohong Liu,
+                  <strong>Ziming Huang</strong>, Xiaomin Liu, Kaixian Chen, Hualiang Jiang, Mingyue Zheng
+                  <br>
+                  <em>Bioinformatics</em>, 38(3), 792–798, 2022
+                  <br>
+                  <a href="https://doi.org/10.1093/bioinformatics/btab714">DOI</a> /
+                  <a href="https://github.com/myzhengSIMM/Graph-pKa">Code</a>
+                  <p></p>
+                  <p>
+                    Graph-p<i>K</i><sub>a</sub>, a novel GNN model with multi-instance learning, predicts both
+                    macro- and micro-p<i>K</i><sub>a</sub> values from molecular graphs, achieving state-of-the-art
+                    accuracy (MAE &lt; 0.5) on a large curated aqueous p<i>K</i><sub>a</sub> dataset.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- Paper 4: Frontiers in Chemistry 2021 — SARS-CoV-2 virtual screening -->
+              <tr onmouseout="fchem_stop()" onmouseover="fchem_start()">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id="fchem_image">
+                      <img src="images/huang_fchem2021.jpg" width="160">
+                    </div>
+                    <img src="images/huang_fchem2021.jpg" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function fchem_start () {
+                      document.getElementById('fchem_image').style.opacity = "1";
+                    }
+                    function fchem_stop () {
+                      document.getElementById('fchem_image').style.opacity = "0";
+                    }
+                    fchem_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://doi.org/10.3389/fchem.2021.740702">
+                    <span class="papertitle">Structure-based virtual screening and identification of potential
+                      inhibitors of SARS-CoV-2 S-RBD and ACE2 interaction</span>
+                  </a>
+                  <br>
+                  Jiacheng Xiong, Yulian Xiang, <strong>Ziming Huang</strong>, Xiaohong Liu, Man Wang,
+                  Guanghao Ge, Hao Chen, Jiaming Xu, Mingyue Zheng, Liang Chen
+                  <br>
+                  <em>Frontiers in Chemistry</em>, 9, 740702, 2021
+                  <br>
+                  <a href="https://doi.org/10.3389/fchem.2021.740702">DOI</a>
+                  <p></p>
+                  <p>
+                    Structure-based virtual screening identified two novel small-molecule inhibitors (DC-RA016
+                    and DC-RA052) that block SARS-CoV-2 S-RBD/ACE2 interaction and exhibit ~50% antiviral
+                    activity in pseudovirus assays at the maximum non-cytotoxic concentration.
+                  </p>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <table
             style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
